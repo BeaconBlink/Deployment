@@ -13,6 +13,6 @@ git  clone  --recurse-submodules git@github.com:BeaconBlink/Deployment.git
 ### Update
 ```bash
 git pull --recurse-submodules
-git submodule update --remote
+git submodule update --remote --recursive
 docker-compose build
 ```
