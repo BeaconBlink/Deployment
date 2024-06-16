@@ -1,0 +1,8 @@
+[submodule "server"]
+	path = server
+	url = ../Server.git
+	branch = main
+[submodule "mapping"]
+	path = mapping
+	url = ../Room_mapping.git
+	branch = main
