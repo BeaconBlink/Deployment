@@ -26,8 +26,19 @@ services:
     build:
       context: ./server
       dockerfile: Dockerfile
+    depends_on:
+      - mongo
     ports:
       - 8080:8080
+
+  mapping:
+    build:
+      context: ./mapping
+      dockerfile: Dockerfile
+    depends_on:
+      - mongo
+    ports:
+      - 8083:8083
 
 volumes:
   mongo-data:
